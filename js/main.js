@@ -1,10 +1,12 @@
-import showTime  from "./script";
+import showTime  from "./time";
 import getWeather from "./weather";
 import getQuotes from "./quotes";
+import setBg from "./changebg";
 
 getWeather();
 showTime();
 getQuotes();
+setBg ();
 
 function setLocalStorage() {
     const names = document.querySelector('.name');
