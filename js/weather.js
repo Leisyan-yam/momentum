@@ -12,9 +12,9 @@ export default async function getWeather() {
     const res = await fetch(url);
     const data = await res.json(); 
     weatherIcon.classList.add(`owf-${data.weather[0].id}`);
-    temperature.textContent = `${data.main.temp}°C`;
+    temperature.textContent = `${Math.round(data.main.temp)}°C`;
     weatherDescription.textContent = data.weather[0].description;
-    wind.textContent = `Wind speed ${data.wind.speed} m/s `;
+    wind.textContent = `Wind speed ${Math.round(data.wind.speed)} m/s `;
     humidity.textContent = `Humidity: ${data.main.humidity} %`
   }
  

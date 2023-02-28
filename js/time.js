@@ -31,7 +31,7 @@ function getTimeOfDay() {
         return 'moning'
     }
     if ( (currentHours >= 12) &&  (currentHours < 18) ) {
-            return 'day'
+            return 'afternoon'
     }
     if ( (currentHours >= 18 ) &&  (currentHours < 24) ) {
     return 'evening'

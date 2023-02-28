@@ -2,6 +2,7 @@ import showTime  from "./time";
 import getWeather from "./weather";
 import getQuotes from "./quotes";
 import setBg from "./changebg";
+import showPlayList from "./audioPlayer";
 
 
 
@@ -9,6 +10,7 @@ getWeather();
 showTime();
 getQuotes();
 setBg ();
+showPlayList ();
 
 function setLocalStorage() {
     const city = document.querySelector('.city');
